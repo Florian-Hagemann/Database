@@ -1,2 +1,3 @@
-# Database
-A database engine for small projects like games
+# Database (name pending...)
+A database engine written in C++ made to be used in python.
+
