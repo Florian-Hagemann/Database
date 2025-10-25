@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     
-    func(1,2);
+    cout << func(1,2) << endl;
     return 0;
 
 }

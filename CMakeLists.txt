@@ -29,9 +29,14 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(
-  hellotest
+add_executable(hellotest
   tests/hellotest.cpp
+  source/func.cpp   # ✅ add this
+)
+
+target_include_directories(hellotest
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/include
 )
 
 target_link_libraries(
