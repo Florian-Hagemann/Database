@@ -3,6 +3,7 @@
 
 using namespace std;
 
-void func() {
-    cout << "func" << endl;
+int func(int a, int b) {
+    cout << a + b << endl;
+    return a + b;
 }
