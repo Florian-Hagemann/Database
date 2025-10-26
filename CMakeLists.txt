@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION 3.28)
 project(Database)
 
 set(SOURCES
-    source/main.cpp
+    source/Main.cpp
+    source/FileHandler.cpp
+    source/UserHandler.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -28,20 +30,20 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(hellotest
-  tests/hellotest.cpp
-  source/func.cpp   # ✅ add this
+add_executable(tests
+  tests/Test_FileHandler.cpp
+  tests/Test_UserHandler.cpp
 )
 
-target_include_directories(hellotest
+target_include_directories(tests
     PRIVATE
         ${PROJECT_SOURCE_DIR}/include
 )
 
 target_link_libraries(
-  hellotest
+  tests
   GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(hellotest)
+gtest_discover_tests(tests)
