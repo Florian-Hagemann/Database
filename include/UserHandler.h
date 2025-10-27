@@ -7,6 +7,6 @@ class UserHandler {
     private:
     std::string rawInput;
     std::vector<std::string> parsedInput;
-    void parseInput();
+    void parseInput(std::string* PRT_rawInput);
 };
 
