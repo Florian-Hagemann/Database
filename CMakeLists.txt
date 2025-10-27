@@ -31,8 +31,8 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(tests
-  tests/Test_FileHandler.cpp
   tests/Test_UserHandler.cpp
+  source/UserHandler.cpp
 )
 
 target_include_directories(tests
