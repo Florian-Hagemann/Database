@@ -2,3 +2,4 @@ binary
 .vscode
 build
 libraries
+*.code-workspace
