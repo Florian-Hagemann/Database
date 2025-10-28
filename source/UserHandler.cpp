@@ -18,6 +18,10 @@ std::vector<std::string> UserHandler::parseInput(std::string* PTR_rawInput) {
 
         if(PTR_rawInput->at(i) == ' ') {
 
+            if(temp == "") {
+                continue;
+            }
+
             parsedInput.push_back(temp);
             temp.clear();
 

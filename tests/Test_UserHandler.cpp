@@ -8,7 +8,7 @@ TEST(TestUserHandler, TestParsing) {
 
     // test cases
     std::vector<std::string> testCase = {"123 abc 321", "aaaaaaaaaa", "hello world", "heyyy  yooo"};
-    std::vector<std::vector<std::string>> expectedResult = {{"123", "abc", "321"}, {"aaaaaaaaaa"}, {"hello", "world"}, {"heyyy", "yoo"}};
+    std::vector<std::vector<std::string>> expectedResult = {{"123", "abc", "321"}, {"aaaaaaaaaa"}, {"hello", "world"}, {"heyyy", "yooo"}};
 
     // test those cases
     // ! make sure that there are as many test cases as expected results
