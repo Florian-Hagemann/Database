@@ -19,7 +19,7 @@ void Database::open(std::string fileName) {
 
 }
 
-void Database::close(std::string fileName) {
+void Database::close() {
 
     fileStream.close();
 
