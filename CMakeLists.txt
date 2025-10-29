@@ -4,7 +4,7 @@ project(Database)
 
 set(SOURCES
     source/Main.cpp
-    source/FileHandler.cpp
+    source/Database.cpp
     source/UserHandler.cpp
 )
 
@@ -32,6 +32,8 @@ enable_testing()
 
 add_executable(tests
   tests/Test_UserHandler.cpp
+  tests/Test_Database.cpp
+  source/Database.cpp
   source/UserHandler.cpp
 )
 
