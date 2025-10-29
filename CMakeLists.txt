@@ -4,7 +4,7 @@ project(Database)
 
 set(SOURCES
     source/Main.cpp
-    source/FileHandler.cpp
+    source/Database.cpp
     source/UserHandler.cpp
 )
 
