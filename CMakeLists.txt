@@ -32,6 +32,8 @@ enable_testing()
 
 add_executable(tests
   tests/Test_UserHandler.cpp
+  tests/Test_Database.cpp
+  source/Test_Database.cpp
   source/UserHandler.cpp
 )
 
